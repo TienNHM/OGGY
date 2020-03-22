@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Reflection;
 
 namespace OGGY
 {
@@ -15,6 +17,9 @@ namespace OGGY
         public frmMain()
         {
             InitializeComponent();
+            var assembly = Assembly.GetExecutingAssembly();
+            var filePath = "OGGY.assets.oggy.oggy-angel-00.png";
+            pictureBox1.Image = Image.FromStream(assembly.GetManifestResourceStream(filePath));
         }
     }
 }
