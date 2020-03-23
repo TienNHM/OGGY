@@ -7,5 +7,6 @@ namespace OGGY
 {
     public class Gian : Character, IMovable
     {
+        //Do something....
     }
 }
