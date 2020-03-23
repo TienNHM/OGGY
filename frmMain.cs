@@ -20,6 +20,9 @@ namespace OGGY
             var assembly = Assembly.GetExecutingAssembly();
             var filePath = "OGGY.assets.oggy.oggy-angel-00.png";
             pictureBox1.Image = Image.FromStream(assembly.GetManifestResourceStream(filePath));
+            //ahahahah
+            //Do something.........
+            //
         }
     }
 }

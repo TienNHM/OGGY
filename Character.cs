@@ -7,5 +7,6 @@ namespace OGGY
 {
     public class Character : ICharacter
     {
+        //Do something....
     }
 }

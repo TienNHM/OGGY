@@ -7,5 +7,10 @@ namespace OGGY
 {
     public class Gian : Character, IMovable
     {
+        //Do something....
+        #region Fields
+        #endregion
+        //Sau khi thay doi code
+        //haha
     }
 }
