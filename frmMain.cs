@@ -22,6 +22,7 @@ namespace OGGY
             pictureBox1.Image = Image.FromStream(assembly.GetManifestResourceStream(filePath));
 
             //Do something.........
+            //
         }
     }
 }
