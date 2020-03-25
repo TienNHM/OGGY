@@ -14,12 +14,26 @@ namespace OGGY
 {
     public partial class frmMain : Form
     {
+        private Oggy oggy;
         public frmMain()
         {
             InitializeComponent();
+            InitGame();
+        }
+
+        private void InitGame()
+        {
             var assembly = Assembly.GetExecutingAssembly();
-            var filePath = "OGGY.assets.oggy.oggy-angel-00.png";
-            pictureBox1.Image = Image.FromStream(assembly.GetManifestResourceStream(filePath));
+            this.BackgroundImage = Image.FromStream(assembly.GetManifestResourceStream("OGGY.assets.kitchen.bg_00.png"));
+            oggy = new Oggy();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            int i = oggy.Run.IndexOf(picOggy.Image);
+            if (i + 1 < oggy.Run.Count)
+                picOggy.Image = oggy.Run[++i];
+            else picOggy.Image = oggy.Run[0];
         }
     }
 }

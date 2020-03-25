@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OGGY.frmMain" Collapsed="true">
-    <Position X="10" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QBQAAAAAACAAAAAAAACAQAACAAAAAABAAAAAAQBAACA=</HashCode>
       <FileName>frmMain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Program" Collapsed="true">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Properties.Resources" Collapsed="true">
-    <Position X="10" Y="1.5" Width="1.5" />
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Properties.Settings" Collapsed="true">
-    <Position X="11.75" Y="1.5" Width="1.5" />
+    <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Character">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Character.cs</FileName>
@@ -35,14 +35,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="OGGY.Oggy">
-    <Position X="0.75" Y="2" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAI=</HashCode>
       <FileName>Oggy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Gian">
-    <Position X="3" Y="2" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Gian.cs</FileName>
@@ -50,7 +50,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="OGGY.Background">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Background.cs</FileName>
@@ -58,14 +58,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="OGGY.Kitchen">
-    <Position X="0.5" Y="5" Width="1.5" />
+    <Position X="6.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Kitchen.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OGGY.Coin">
-    <Position X="5.25" Y="2" Width="1.5" />
+    <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Coin.cs</FileName>
@@ -73,7 +73,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="OGGY.VatCan">
-    <Position X="7.5" Y="2" Width="1.5" />
+    <Position X="4.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VatCan.cs</FileName>
@@ -81,21 +81,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="OGGY.IBackground" Collapsed="true">
-    <Position X="10" Y="2.75" Width="1.5" />
+    <Position X="4.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IBackground.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="OGGY.ICharacter" Collapsed="true">
-    <Position X="11.75" Y="2.75" Width="1.5" />
+    <Position X="6.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="OGGY.IMovable" Collapsed="true">
-    <Position X="10" Y="3.5" Width="1.5" />
+    <Position X="4.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IMovable.cs</FileName>
