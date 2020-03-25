@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.picOggy = new System.Windows.Forms.PictureBox();
             this.pnlInfo = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picOggy)).BeginInit();
             this.SuspendLayout();
@@ -57,27 +55,10 @@
             this.pnlInfo.Size = new System.Drawing.Size(1234, 40);
             this.pnlInfo.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1234, 100);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 140);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1234, 200);
-            this.panel2.TabIndex = 3;
-            // 
             // timer
             // 
             this.timer.Enabled = true;
+            this.timer.Interval = 150;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // frmMain
@@ -85,8 +66,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 729);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlInfo);
             this.Controls.Add(this.picOggy);
             this.DoubleBuffered = true;
@@ -104,8 +83,6 @@
 
         private System.Windows.Forms.PictureBox picOggy;
         private System.Windows.Forms.Panel pnlInfo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Timer timer;
     }
 }
