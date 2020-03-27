@@ -12,5 +12,6 @@ namespace OGGY
         #endregion
         //Sau khi thay doi code
         //haha
+        //Commit xong, muốn gộp code lại...............
     }
 }

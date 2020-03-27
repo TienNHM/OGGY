@@ -56,6 +56,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gian.cs" />
     <Compile Include="IBackground.cs" />
     <Compile Include="ICharacter.cs" />
@@ -68,6 +74,9 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,7 +87,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram1.cd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,7 +103,105 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="TMP\baloon0001.png" />
+    <Content Include="TMP\baloon0002.png" />
+    <Content Include="TMP\baloon0003.png" />
+    <Content Include="TMP\baloon0004.png" />
+    <Content Include="TMP\baloon0005.png" />
+    <Content Include="TMP\baloon0006.png" />
+    <Content Include="TMP\cottillions0001.png" />
+    <Content Include="TMP\cottillions0002.png" />
+    <Content Include="TMP\cottillions0003.png" />
+    <Content Include="TMP\cottillions0004.png" />
+    <Content Include="TMP\cottillions0005.png" />
+    <Content Include="TMP\cottillions0006.png" />
+    <Content Include="TMP\cottillions0007.png" />
+    <Content Include="TMP\cottillions0008.png" />
+    <Content Include="TMP\cottillions0009.png" />
+    <Content Include="TMP\cottillions0010.png" />
+    <Content Include="TMP\fx-stars-001.png" />
+    <Content Include="TMP\fx-stars-002.png" />
+    <Content Include="TMP\fx-stars-003.png" />
+    <Content Include="TMP\fx-stars-004.png" />
+    <Content Include="TMP\fx-stars-005.png" />
+    <Content Include="TMP\fx-stars-006.png" />
+    <Content Include="TMP\fx-stars-013.png" />
+    <Content Include="TMP\hit-fx-01.png" />
+    <Content Include="TMP\hit-fx-02.png" />
+    <Content Include="TMP\hit-fx-03.png" />
+    <Content Include="TMP\hit-fx-04.png" />
+    <Content Include="TMP\hit-fx-05.png" />
+    <Content Include="TMP\hit-fx-06.png" />
+    <Content Include="TMP\hit-fx-07.png" />
+    <Content Include="TMP\hit-fx-08.png" />
+    <Content Include="TMP\hit-head-01.png" />
+    <Content Include="TMP\hit-head-02.png" />
+    <Content Include="TMP\hit-head-03.png" />
+    <Content Include="TMP\hit-head-04.png" />
+    <Content Include="TMP\hit-head-05.png" />
+    <EmbeddedResource Include="TMP\hit-head-06.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\hole-smoke-001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\hole-smoke-002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\hole-smoke-003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\hole-smoke-010.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\jump-smoke-00.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\jump-smoke-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\jump-smoke-04.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\new-smoke-07.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\pool_splash_f1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\pool_splash_f4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\run_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\run_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMP\run_11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="TMP\smoke.png" />
+    <Content Include="TMP\splash0001.png" />
+    <Content Include="TMP\splash0002.png" />
+    <Content Include="TMP\splash0003.png" />
+    <Content Include="TMP\splash0004.png" />
+    <Content Include="TMP\star-00.png" />
+    <Content Include="TMP\star-04.png" />
+    <Content Include="TMP\stars0001.png" />
+    <Content Include="TMP\stars0023.png" />
+    <Content Include="TMP\SuperPower0001.png" />
+    <Content Include="TMP\SuperPower0002.png" />
+    <Content Include="TMP\SuperPower0003.png" />
+    <Content Include="TMP\SuperPower0004.png" />
+    <Content Include="TMP\SuperPower0005.png" />
+    <Content Include="TMP\SuperPower0006.png" />
+    <Content Include="TMP\SuperPower0007.png" />
+    <Content Include="TMP\SuperPower0008.png" />
+    <Content Include="TMP\sweat0001.png" />
+    <Content Include="TMP\sweat0012.png" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="assets\cockroaches\cock-dd-dead-000.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
