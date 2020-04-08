@@ -10,36 +10,41 @@ namespace OGGY
 {
     public class Coin : Character, IMovable
     {
-        public PictureBox Item;
+        public Image Img;
+        public Point Location;
         public static int iWidth = 32;
         public static int iHeight = 45;
+        public bool bEarned = false;
 
         public Coin(int index)
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
-            Item = new PictureBox()
-            {
-                Image = Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.game.coin{index}.png")),
-                BackColor = Color.Transparent,
-                Location = GetLocation(index),
-                Visible = true,
-                SizeMode = PictureBoxSizeMode.StretchImage,
-                Width = iWidth,
-                Height = iHeight
-            };
+            Img = Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.game.coin{index}.png"));
+            Location = GetLocation(index);
         }
 
         private Point GetLocation(int index)
         {
             int x = 140 * index + 1200;
-            //y = f(x) = -45x^2 + 315x + 500
+            //y = f(z) = 25z^2 - 150z + 500
             int y = 25 * index * index - 150 * index + 500;
             return new Point(x, y);
         }
 
         public void GetX()
         {
-            Item.Left -= 40;
+            int x = Location.X - 30;
+            if (x < 0)
+            {
+                x = 1200;
+                bEarned = false;
+            }
+            Location = new Point(x, Location.Y);
+        }
+
+        public void Draw(Graphics gp)
+        {
+            gp.DrawImage(Img, Location);
         }
     }
 }
