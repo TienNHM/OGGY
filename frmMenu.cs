@@ -59,23 +59,17 @@ namespace OGGY
             //if (i > 8) i = 1;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
-            //player.URL = "1.mp3";
-            //player.controls.play();
-
-            string Path_NhacNen = "1.mp3";
-            mciSendString("close MediaFile", null, 0, IntPtr.Zero);
-            //Phát Nhạc
-            mciSendString("open \"" + Path_NhacNen + "\" type mpegvideo alias MediaFile", null, 0, IntPtr.Zero);
-            mciSendString("play MediaFile REPEAT", null, 0, IntPtr.Zero);
-        }
-
         #region Events
         [DllImport("winmm.dll")]
         public static extern long mciSendString(string strCommand, StringBuilder strReturn, int iReturnLength, IntPtr hwndCallback);
         #endregion
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            mciSendString("close MediaFile", null, 0, IntPtr.Zero);
+            mciSendString("open \"" + @"assets\music\Background.mp3" + "\" type mpegvideo alias MediaFile", null, 0, IntPtr.Zero);
+            mciSendString("play MediaFile REPEAT", null, 0, IntPtr.Zero);
+        }
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -94,6 +88,16 @@ namespace OGGY
             DialogResult traLoi = MessageBox.Show("Bạn muốn thoát game chứ?", "Xác nhận", MessageBoxButtons.YesNo);
             if (traLoi == DialogResult.Yes)
                 Application.Exit();
+        }
+
+        private void picFXMusic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

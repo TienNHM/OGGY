@@ -16,6 +16,7 @@ namespace OGGY
         public static int iWidth = 175;
         public static int iHeight = 240;
         public static readonly int iTop = 380;
+        public static readonly int iLeft = 80;
         private static int indexOggyPic = 0;
 
         public Oggy()
@@ -34,12 +35,28 @@ namespace OGGY
         public void Draw(Graphics gp)
         {
             if (indexOggyPic < lRun.Count)
-                gp.DrawImageUnscaled(lRun[indexOggyPic++], 50, iTop);
+                gp.DrawImageUnscaled(lRun[indexOggyPic++], iLeft, iTop);
             else
             {
                 indexOggyPic = 0;
-                gp.DrawImageUnscaled(lRun[indexOggyPic++], 80, iTop);
+                gp.DrawImageUnscaled(lRun[indexOggyPic++], iLeft, iTop);
             }
+        }
+
+        public int Earns(List<Coin> lCoins)
+        {
+            int re = 0;
+            int right = iLeft + iWidth;
+            lCoins.ForEach(coin =>
+            {
+                if (coin.bEarned == false)
+                    if (coin.Location.X <= right && coin.Location.Y + Coin.iHeight >= iTop)
+                    {
+                        re++;
+                        coin.bEarned = true;
+                    }
+            });
+            return re;
         }
     }
 }

@@ -44,7 +44,8 @@ namespace OGGY
 
         public void Draw(Graphics gp)
         {
-            gp.DrawImage(Img, Location);
+            if (bEarned == false)
+                gp.DrawImage(Img, Location);
         }
     }
 }

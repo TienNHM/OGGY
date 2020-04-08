@@ -42,6 +42,8 @@ namespace OGGY
         private void timer_Tick(object sender, EventArgs e)
         {
             Draw(this, new PaintEventArgs(gp.Graphics, this.DisplayRectangle));
+            scores += oggy.Earns(lCoins);
+            lblScores.Text = scores.ToString();
         }
         
         public void Draw(object sender, PaintEventArgs e)
@@ -55,9 +57,6 @@ namespace OGGY
                 lCoins[index].GetX();
                 lCoins[index].Draw(gp.Graphics);
             }
-            scores += Earns();
-            this.Text = scores.ToString();
-
             gp.Render();
         }
         public int Earns()
