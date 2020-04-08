@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button2 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.picBgMusic = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picFXMusic = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.picNew = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -41,7 +40,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNew)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -50,34 +49,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1023, 242);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 71);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Option";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 150;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(1023, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 69);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "EXIT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExit.Location = new System.Drawing.Point(281, 56);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(68, 42);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "EXIT";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // picBgMusic
             // 
@@ -90,15 +79,15 @@
             this.picBgMusic.TabStop = false;
             this.picBgMusic.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // picFXMusic
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::OGGY.Properties.Resources.opt_sound;
-            this.pictureBox2.Location = new System.Drawing.Point(109, 56);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 42);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.picFXMusic.BackColor = System.Drawing.Color.Transparent;
+            this.picFXMusic.Image = global::OGGY.Properties.Resources.opt_sound;
+            this.picFXMusic.Location = new System.Drawing.Point(109, 56);
+            this.picFXMusic.Name = "picFXMusic";
+            this.picFXMusic.Size = new System.Drawing.Size(52, 42);
+            this.picFXMusic.TabIndex = 6;
+            this.picFXMusic.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -179,17 +168,17 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.picNew);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picFXMusic);
             this.Controls.Add(this.picBgMusic);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnExit);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNew)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -201,11 +190,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox picBgMusic;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picFXMusic;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox picNew;
         private System.Windows.Forms.PictureBox pictureBox5;
