@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace OGGY
 {
-    public partial class frmMain : Form
+    public partial class frmMenu : Form
     {
-        public frmMain()
+        public frmMenu()
         {
             InitializeComponent();
             //Để lấy resources có trong project thì có vài cách (theo tui biết):
@@ -26,7 +27,9 @@ namespace OGGY
             //1.2 Add resources -> Add existing file.... -> Chọn file rồi add vào thôi
             //1.3 Sử dụng: {Tên namespace}.Properties.Resources.<tên file>;
             //pictureBox1.Image = OGGY.Properties.Resources.aim_000;
-            pictureBox1.Image = OGGY.Properties.Resources.bomb;
+            pictureBox1.Image = OGGY.Properties.Resources.opt_music;
+            pictureBox2.Image = OGGY.Properties.Resources.opt_sound;
+            pictureBox3.Image = OGGY.Properties.Resources.logo_text_EN;
             //
             // Cách 2. Add file/thư mục (như tui đã làm)
             // 2.1 using System.Reflection;
@@ -38,12 +41,6 @@ namespace OGGY
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            frmOptions Option = new frmOptions();
-            Option.Show();
-        }
-
         int i = 1;
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -53,5 +50,23 @@ namespace OGGY
             //i++;
             //if (i > 8) i = 1;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+            //player.URL = "1.mp3";
+            //player.controls.play();
+
+            string Path_NhacNen = "1.mp3";
+            mciSendString("close MediaFile", null, 0, IntPtr.Zero);
+            //Phát Nhạc
+            mciSendString("open \"" + Path_NhacNen + "\" type mpegvideo alias MediaFile", null, 0, IntPtr.Zero);
+            mciSendString("play MediaFile REPEAT", null, 0, IntPtr.Zero);
+        }
+
+        #region Events
+        [DllImport("winmm.dll")]
+        public static extern long mciSendString(string strCommand, StringBuilder strReturn, int iReturnLength, IntPtr hwndCallback);
+        #endregion
     }
 }

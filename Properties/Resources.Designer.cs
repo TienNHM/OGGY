@@ -563,6 +563,16 @@ namespace OGGY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hoicham {
+            get {
+                object obj = ResourceManager.GetObject("hoicham", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hud_powerbtn {
             get {
                 object obj = ResourceManager.GetObject("hud_powerbtn", resourceCulture);
@@ -613,6 +623,66 @@ namespace OGGY.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_blank {
+            get {
+                object obj = ResourceManager.GetObject("logo_blank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_text_EN {
+            get {
+                object obj = ResourceManager.GetObject("logo_text_EN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_bg {
+            get {
+                object obj = ResourceManager.GetObject("menu_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_bg___Copy {
+            get {
+                object obj = ResourceManager.GetObject("menu_bg___Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_fridge {
+            get {
+                object obj = ResourceManager.GetObject("menu_fridge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_badge_en {
+            get {
+                object obj = ResourceManager.GetObject("new_badge_en", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap obj_comp_panel {
             get {
                 object obj = ResourceManager.GetObject("obj_comp_panel", resourceCulture);
@@ -626,6 +696,46 @@ namespace OGGY.Properties {
         internal static System.Drawing.Bitmap olivia_poster {
             get {
                 object obj = ResourceManager.GetObject("olivia_poster", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opt_music {
+            get {
+                object obj = ResourceManager.GetObject("opt_music", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opt_nomusic {
+            get {
+                object obj = ResourceManager.GetObject("opt_nomusic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opt_nosound {
+            get {
+                object obj = ResourceManager.GetObject("opt_nosound", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap opt_sound {
+            get {
+                object obj = ResourceManager.GetObject("opt_sound", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

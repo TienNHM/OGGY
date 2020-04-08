@@ -268,6 +268,9 @@
   <data name="helping_hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\helping-hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hoicham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\hoicham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hud_powerbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\hud-powerbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -283,11 +286,41 @@
   <data name="l3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\l3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\logo-blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_text_EN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\logo-text-EN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\menu_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_bg___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\menu_bg - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_fridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\menu-fridge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new_badge_en" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\new_badge_en.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="obj_comp_panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\obj_comp_panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="olivia_poster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\olivia-poster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opt_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\opt-music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opt_nomusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\opt-nomusic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opt_nosound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\opt-nosound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opt_sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\menu\opt-sound.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pause_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\game\pause_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
