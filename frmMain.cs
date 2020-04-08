@@ -13,9 +13,9 @@ using System.Runtime.InteropServices;
 
 namespace OGGY
 {
-    public partial class frmMenu : Form
+    public partial class frmMain : Form
     {
-        public frmMenu()
+        public frmMain()
         {
             InitializeComponent();
             //Để lấy resources có trong project thì có vài cách (theo tui biết):

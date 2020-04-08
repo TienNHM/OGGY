@@ -1,6 +1,6 @@
 ﻿namespace OGGY
 {
-    partial class frmMenu
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
