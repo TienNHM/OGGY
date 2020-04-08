@@ -32,7 +32,7 @@ namespace OGGY
 
 
             picBgMusic.Image = OGGY.Properties.Resources.opt_music;
-            pictureBox2.Image = OGGY.Properties.Resources.opt_sound;
+            picFXMusic.Image = OGGY.Properties.Resources.opt_sound;
             pictureBox3.Image = OGGY.Properties.Resources.logo_text_EN;
 
 
@@ -87,6 +87,13 @@ namespace OGGY
             frmMain frmMain = new frmMain();
             frmMain.ShowDialog();
             this.Hide();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult traLoi = MessageBox.Show("Bạn muốn thoát game chứ?", "Xác nhận", MessageBoxButtons.YesNo);
+            if (traLoi == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }
