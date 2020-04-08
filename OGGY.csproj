@@ -1163,16 +1163,10 @@
     <EmbeddedResource Include="assets\oggy\oggy-headhit-005.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-jump-000.png">
+    <EmbeddedResource Include="assets\oggy\oggy-jump-0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-jump-000_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-jump-001.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-jump-001_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-jump-1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="assets\oggy\oggy-jump-red-00.png">
@@ -1211,76 +1205,40 @@
     <EmbeddedResource Include="assets\oggy\oggy-roll-003.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-000.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-000_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-001.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-001_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-002.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-002_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-003.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-003_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-004.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-004_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-005.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-10.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-005_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-006.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-006_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-007.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-007_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-008.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-008_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-009.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-009_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-010.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-010_r.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-011.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-run-011_r.png">
+    <EmbeddedResource Include="assets\oggy\oggy-run-11.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="assets\oggy\oggy-run-red-00.png">
@@ -1389,6 +1347,26 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="assets\oggy\super-oggy-red-02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assets\oggy\oggy-jump-7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

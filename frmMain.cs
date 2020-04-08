@@ -14,12 +14,35 @@ namespace OGGY
 {
     public partial class frmMain : Form
     {
+        private Oggy oggy;
+        private List<Coin> lCoins;
         public frmMain()
         {
             InitializeComponent();
+            InitGame();
+        }
+
+        private void InitGame()
+        {
             var assembly = Assembly.GetExecutingAssembly();
-            var filePath = "OGGY.assets.oggy.oggy-angel-00.png";
-            pictureBox1.Image = Image.FromStream(assembly.GetManifestResourceStream(filePath));
+            this.BackgroundImage = Image.FromStream(assembly.GetManifestResourceStream("OGGY.assets.kitchen.bg_00.png"));
+            oggy = new Oggy();
+            lCoins = new List<Coin>();
+            for (int i = 0; i < 7; i++)
+            {
+                lCoins.Add(new Coin(i));
+                Controls.Add(lCoins[i].Item);
+                lCoins[i].Item.BringToFront();
+            }
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            int i = oggy.lRun.IndexOf(picOggy.Image);
+            if (i + 1 < oggy.lRun.Count)
+                picOggy.Image = oggy.lRun[++i];
+            else picOggy.Image = oggy.lRun[0];
+            lCoins.ForEach(item => item.GetX());
         }
     }
 }
