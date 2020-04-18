@@ -11,13 +11,18 @@ namespace OGGY
 {
     public class Oggy : Character
     {
+        #region Properties
         public List<Image> lRun = new List<Image>();
         public List<Image> lJump = new List<Image>();
         public static int iWidth = 175;
         public static int iHeight = 240;
-        public static readonly int iTop = 380;
-        public static readonly int iLeft = 80;
-        private static int indexOggyPic = 0;
+        private int indexOggyPic = 0;
+        private bool isJump = false;
+        public Point P1 { get; set; }
+        public Point P2 { get; set; }
+        public Point P3 { get; set; }
+        public Point P4 { get; set; }
+        #endregion
 
         public Oggy()
         {
@@ -26,37 +31,57 @@ namespace OGGY
             {
                 lRun.Add(Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.oggy.oggy-run-{i}.png")));
             }
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 10; i++)
             {
                 lJump.Add(Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.oggy.oggy-jump-{i}.png")));
             }
+            P1 = Location = new Point(80, 380);
+            P2 = new Point(Location.X + iWidth, Location.Y);
+            P3 = new Point(Location.X, Location.Y + iHeight);
+            P4 = new Point(Location.X + iWidth, Location.Y + iHeight);
         }
 
-        public void Draw(Graphics gp)
+        public void Jump()
         {
-            if (indexOggyPic < lRun.Count)
-                gp.DrawImageUnscaled(lRun[indexOggyPic++], iLeft, iTop);
+            isJump = true;
+            indexOggyPic = 0;
+        }
+
+        public override void Draw(Graphics gp)
+        {
+            if (isJump)
+            {
+                if (indexOggyPic < lJump.Count)
+                {
+                    Location = GetLocation();
+                    gp.DrawImageUnscaled(lJump[indexOggyPic++], Location);
+                }
+                else
+                {
+                    indexOggyPic = 0;
+                    isJump = false;
+                    Location = new Point(80, 380);
+                }
+            }
             else
             {
-                indexOggyPic = 0;
-                gp.DrawImageUnscaled(lRun[indexOggyPic++], iLeft, iTop);
+                if (indexOggyPic < lRun.Count)
+                    gp.DrawImageUnscaled(lRun[indexOggyPic++], Location);
+                else
+                {
+                    indexOggyPic = 0;
+                    gp.DrawImageUnscaled(lRun[indexOggyPic++], Location);
+                }
             }
         }
 
-        public int Earns(List<Coin> lCoins)
+        protected override Point GetLocation()
         {
-            int re = 0;
-            int right = iLeft + iWidth;
-            lCoins.ForEach(coin =>
-            {
-                if (coin.bEarned == false)
-                    if (coin.Location.X <= right && coin.Location.Y + Coin.iHeight >= iTop)
-                    {
-                        re++;
-                        coin.bEarned = true;
-                    }
-            });
-            return re;
+            int index = indexOggyPic;
+            int y = 380;
+            if (index < 5) y -= 60 * index;
+            else y = 120 + 60 * (index - 5);
+            return new Point(Location.X, y);
         }
     }
 }
