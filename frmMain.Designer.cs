@@ -44,12 +44,14 @@
             // lblScores
             // 
             this.lblScores.BackColor = System.Drawing.Color.Transparent;
+            this.lblScores.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblScores.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.lblScores.ForeColor = System.Drawing.Color.Yellow;
             this.lblScores.Image = global::OGGY.Properties.Resources.counter_bg;
-            this.lblScores.Location = new System.Drawing.Point(626, -1);
+            this.lblScores.Location = new System.Drawing.Point(0, 0);
+            this.lblScores.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblScores.Name = "lblScores";
-            this.lblScores.Size = new System.Drawing.Size(149, 63);
+            this.lblScores.Size = new System.Drawing.Size(199, 75);
             this.lblScores.TabIndex = 0;
             this.lblScores.Text = "0";
             this.lblScores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,10 +59,12 @@
             // lblQuit
             // 
             this.lblQuit.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuit.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblQuit.Image = global::OGGY.Properties.Resources.close_btn;
-            this.lblQuit.Location = new System.Drawing.Point(1223, -1);
+            this.lblQuit.Location = new System.Drawing.Point(1163, 0);
+            this.lblQuit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuit.Name = "lblQuit";
-            this.lblQuit.Size = new System.Drawing.Size(65, 63);
+            this.lblQuit.Size = new System.Drawing.Size(87, 75);
             this.lblQuit.TabIndex = 1;
             this.lblQuit.Click += new System.EventHandler(this.lblQuit_Click);
             // 
@@ -71,19 +75,21 @@
             this.panel1.Controls.Add(this.lblScores);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 61);
+            this.panel1.Size = new System.Drawing.Size(1250, 75);
             this.panel1.TabIndex = 2;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 749);
+            this.ClientSize = new System.Drawing.Size(1250, 750);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

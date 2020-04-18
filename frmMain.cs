@@ -23,7 +23,7 @@ namespace OGGY
         public static int scores = 0;
         private Background background;
         private Random random = new Random(new DateTime().Millisecond);
-        SoundPlayer sound = new SoundPlayer(@"D:\Github\OGGY\assets\music\Background.wav");
+        SoundPlayer sound = new SoundPlayer(@"assets\music\Background.wav");
              
         public frmMain()
         {
@@ -35,7 +35,7 @@ namespace OGGY
             timer.Enabled = true;
             sound.PlayLooping();
         }
-
+        
         private void InitGame()
         {
             background = new Kitchen();

@@ -20,10 +20,14 @@ namespace OGGY
         public static void Background()
         {
             //Duong dan den file *.wav
+            //Truy xuat file nhu cach hôm tui làm Assembly
             string path = "assets/music/Background.wav";
+            //Vì đã embbed vào project nên file đã nằm trong thư mục bin rồi
+            //ông chỉ cần truy cập theo thư mục như trên
             PlayMusic(path);
         }
 
         //Code
+        
     }
 }
