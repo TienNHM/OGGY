@@ -7,5 +7,6 @@ namespace OGGY
 {
     public interface ICharacter
     {
+        
     }
 }

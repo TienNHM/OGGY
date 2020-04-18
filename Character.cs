@@ -6,7 +6,13 @@ using System.Drawing;
 
 namespace OGGY
 {
-    public class Character : ICharacter
+    public abstract class Character : ICharacter
     {
+        public Image Img;
+        public Point Location;
+
+        public abstract void Draw(Graphics gp);
+
+        protected abstract Point GetLocation();
     }
 }

@@ -10,41 +10,45 @@ namespace OGGY
 {
     public class Coin : Character, IMovable
     {
-        public Image Img;
-        public Point Location;
         public static int iWidth = 32;
         public static int iHeight = 45;
-        public bool bEarned = false;
+        public bool bVisible { get; set; } = true;
+        public readonly int index;
 
         public Coin(int index)
         {
+            this.index = index;
             Assembly assembly = Assembly.GetExecutingAssembly();
             Img = Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.game.coin{index}.png"));
-            Location = GetLocation(index);
+            Location = GetLocation();
         }
 
-        private Point GetLocation(int index)
+        protected override Point GetLocation()
         {
-            int x = 140 * index + 1200;
-            //y = f(z) = 25z^2 - 150z + 500
-            int y = 25 * index * index - 150 * index + 500;
+            int x = 140 * index + 1300;
+            //y = f(z) = 25z^2 - 150z + 580
+            int y = 25 * index * index - 150 * index + 580;
             return new Point(x, y);
         }
 
         public void GetX()
         {
-            int x = Location.X - 30;
-            if (x < 0)
-            {
-                x = 1200;
-                bEarned = false;
-            }
-            Location = new Point(x, Location.Y);
+          
         }
 
-        public void Draw(Graphics gp)
+        public override void Draw(Graphics gp)
         {
-            gp.DrawImage(Img, Location);
+            if (bVisible == true)
+            {
+                int x = Location.X - 30;
+                if (x < 0)
+                {
+                    x = 1300;
+                    bVisible = false;
+                }
+                Location = new Point(x, Location.Y);
+                gp.DrawImage(Img, Location);
+            }
         }
     }
 }

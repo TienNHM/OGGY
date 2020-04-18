@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
+using System.Reflection;
 
 namespace OGGY
 {
-    public class Background : IBackground, IMovable
+    public abstract class Background : IBackground, IMovable
     {
         #region Fileds
-
+        protected Image background;
         #endregion
 
         #region Properties
@@ -24,7 +26,7 @@ namespace OGGY
         #endregion
 
         #region Events
-
+        public abstract void Draw(Graphics gp);
         #endregion
     }
 }
