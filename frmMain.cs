@@ -15,25 +15,28 @@ namespace OGGY
 {
     public partial class frmMain : Form
     {
+        public static int scores;
+        public static int iWidth = 1300;
+        public static int iHeight = 750;
         private BufferedGraphics gp;
         private BufferedGraphicsContext context;
         private Oggy oggy;
         private List<Coin> lCoins;
         private List<VatCan> lVatCan;
-        public static int scores = 0;
         private Background background;
         private Random random = new Random(new DateTime().Millisecond);
-        SoundPlayer sound = new SoundPlayer(@"D:\Github\OGGY\assets\music\Background.wav");
              
         public frmMain()
         {
             InitializeComponent();
+            iWidth = this.Width;
+            iHeight = this.Height;
             context = BufferedGraphicsManager.Current;
             gp = context.Allocate(this.CreateGraphics(), this.DisplayRectangle);
             InitGame();
             var assembly = Assembly.GetExecutingAssembly();
             timer.Enabled = true;
-            sound.PlayLooping();
+            scores = 0;
         }
 
         private void InitGame()
@@ -71,6 +74,7 @@ namespace OGGY
                 //Dung dong ho, ket thuc game
                 timer.Enabled = false;
                 //Ket thuc game, chuyen sang form Menu de xem ket qua
+                MessageBox.Show("END");
                 this.Close();
             }
             scores += value;
