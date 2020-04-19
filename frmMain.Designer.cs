@@ -47,9 +47,10 @@
             this.lblScores.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.lblScores.ForeColor = System.Drawing.Color.Yellow;
             this.lblScores.Image = global::OGGY.Properties.Resources.counter_bg;
-            this.lblScores.Location = new System.Drawing.Point(626, -1);
+            this.lblScores.Location = new System.Drawing.Point(782, -1);
+            this.lblScores.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblScores.Name = "lblScores";
-            this.lblScores.Size = new System.Drawing.Size(149, 63);
+            this.lblScores.Size = new System.Drawing.Size(186, 79);
             this.lblScores.TabIndex = 0;
             this.lblScores.Text = "0";
             this.lblScores.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,9 +59,10 @@
             // 
             this.lblQuit.BackColor = System.Drawing.Color.Transparent;
             this.lblQuit.Image = global::OGGY.Properties.Resources.close_btn;
-            this.lblQuit.Location = new System.Drawing.Point(1223, -1);
+            this.lblQuit.Location = new System.Drawing.Point(1529, -1);
+            this.lblQuit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuit.Name = "lblQuit";
-            this.lblQuit.Size = new System.Drawing.Size(65, 63);
+            this.lblQuit.Size = new System.Drawing.Size(81, 79);
             this.lblQuit.TabIndex = 1;
             this.lblQuit.Click += new System.EventHandler(this.lblQuit_Click);
             // 
@@ -71,23 +73,26 @@
             this.panel1.Controls.Add(this.lblScores);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 61);
+            this.panel1.Size = new System.Drawing.Size(1625, 76);
             this.panel1.TabIndex = 2;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1300, 750);
+            this.ClientSize = new System.Drawing.Size(1625, 938);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.frmMain_PreviewKeyDown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
