@@ -45,10 +45,10 @@ namespace OGGY
                 }
                 iWidth = Img.Width;
                 iHeight = Img.Height;
-                iLeft = 1300;
-                iTop = 680 - iHeight;
+                iLeft = frmMain.iWidth;
+                iTop = frmMain.iHeight - 60 - iHeight;
                 Location = new Point(iLeft, iTop);
-                gpBorder.AddRectangle(new Rectangle(iLeft, iTop, iWidth, iHeight));
+                gpBorder.AddRectangle(new Rectangle(Location.X, Location.Y, iWidth, iHeight));
                 bVisible = false;
             }
             catch
@@ -66,8 +66,9 @@ namespace OGGY
                 else
                 {
                     Location = new Point(x, Location.Y);
-                    gp.DrawImageUnscaled(Img, Location);
+                    gp.DrawImage(Img, Location);
                 }
+                gpBorder.AddRectangle(new Rectangle(Location.X, Location.Y, iWidth, iHeight));
             }
         }
 
