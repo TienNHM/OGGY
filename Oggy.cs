@@ -18,14 +18,11 @@ namespace OGGY
         public static int iHeight = 240;
         private int indexOggyPic = 0;
         private bool isJump = false;
-        public Point P1 { get; set; }
-        public Point P2 { get; set; }
-        public Point P3 { get; set; }
-        public Point P4 { get; set; }
         #endregion
 
         public Oggy()
         {
+            Location = new Point(80, frmMain.iHeight / 2);
             var assembly = Assembly.GetExecutingAssembly();
             for (int i = 0; i < 12; i++)
             {
@@ -35,10 +32,6 @@ namespace OGGY
             {
                 lJump.Add(Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.oggy.oggy-jump-{i}.png")));
             }
-            P1 = Location = new Point(80, 380);
-            P2 = new Point(Location.X + iWidth, Location.Y);
-            P3 = new Point(Location.X, Location.Y + iHeight);
-            P4 = new Point(Location.X + iWidth, Location.Y + iHeight);
         }
 
         public void Jump()
@@ -54,23 +47,23 @@ namespace OGGY
                 if (indexOggyPic < lJump.Count)
                 {
                     Location = GetLocation();
-                    gp.DrawImageUnscaled(lJump[indexOggyPic++], Location);
+                    gp.DrawImage(lJump[indexOggyPic++], Location);
                 }
                 else
                 {
                     indexOggyPic = 0;
                     isJump = false;
-                    Location = new Point(80, 380);
+                    Location = new Point(80, frmMain.iHeight/2);
                 }
             }
             else
             {
                 if (indexOggyPic < lRun.Count)
-                    gp.DrawImageUnscaled(lRun[indexOggyPic++], Location);
+                    gp.DrawImage(lRun[indexOggyPic++], Location);
                 else
                 {
                     indexOggyPic = 0;
-                    gp.DrawImageUnscaled(lRun[indexOggyPic++], Location);
+                    gp.DrawImage(lRun[indexOggyPic++], Location);
                 }
             }
         }
@@ -78,9 +71,10 @@ namespace OGGY
         protected override Point GetLocation()
         {
             int index = indexOggyPic;
-            int y = 380;
-            if (index < 5) y -= 60 * index;
-            else y = 120 + 60 * (index - 5);
+            int y = frmMain.iHeight / 2;
+            int iHight_EachStep = (int)((6.0 / 70) * frmMain.iHeight);
+            if (index < 5) y -= iHight_EachStep * index;
+            else y += iHight_EachStep * (index - 9);
             return new Point(Location.X, y);
         }
     }

@@ -35,13 +35,18 @@ namespace OGGY
         {
             if (vatCan.bVisible == true)
             {
-                if (vatCan.gpBorder.IsVisible(oggy.P1)
-                    || vatCan.gpBorder.IsVisible(oggy.P2)
-                    || vatCan.gpBorder.IsVisible(oggy.P3)
-                    || vatCan.gpBorder.IsVisible(oggy.P4))
-                    return true;
+                int oggy_r = oggy.Location.X + Oggy.iWidth - 20;
+                int vatCan_r = vatCan.Location.X + vatCan.Img.Width;
+                if ((vatCan.Location.X >= oggy.Location.X && vatCan.Location.X <= oggy_r)
+                    || (vatCan_r >= oggy.Location.X && vatCan_r <= oggy_r))
+                {
+                    int oggy_bot = oggy.Location.Y + Oggy.iHeight;
+                    if (vatCan.Location.Y >= oggy.Location.Y || vatCan.Location.Y <= oggy_bot)
+                        return true;
+                }
             }
             return false;
         }
     }
 }
+ 

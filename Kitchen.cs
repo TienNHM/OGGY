@@ -17,7 +17,7 @@ namespace OGGY
 
         public override void Draw(Graphics gp)
         {
-            gp.DrawImageUnscaled(background, 0, 0);
+            gp.DrawImage(background, 0, 0);
         }
 
     }
