@@ -1419,5 +1419,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\menu\chamhoi.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\menu\chamhoi1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
