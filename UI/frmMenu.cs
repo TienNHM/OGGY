@@ -57,6 +57,8 @@ namespace OGGY
             this.Hide();
             frmMain.ShowDialog();
             this.Show();
+            if (iHighScore < frmMain.scores)
+                iHighScore = frmMain.scores;
             lblHighScore.Text = iHighScore.ToString();
         }
 

@@ -1,115 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="OGGY.frmMain" Collapsed="true">
-    <Position X="8.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAYCAAAAACAAAgAAAACIQAAiAAFCAABAAAoAAQAAICA=</HashCode>
-      <FileName>frmMain.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="OGGY.Program" Collapsed="true">
-    <Position X="10.5" Y="2" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OGGY.Properties.Resources" Collapsed="true">
-    <Position X="8.75" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>/5HlHzn+82E+PulvIf2/HQzbsQ4+kHsDCVRoY74Hst4=</HashCode>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OGGY.Properties.Settings" Collapsed="true">
-    <Position X="10.5" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OGGY.Character">
+  <Class Name="OGGY.Characters.Character">
     <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAASAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Character.cs</FileName>
+      <FileName>Characters\Character.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="OGGY.Oggy">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="OGGY.Characters.Oggy">
+    <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAICAgAAAgAAAAAAAAAAAAAAAACAQQAAAAAAACA=</HashCode>
-      <FileName>Oggy.cs</FileName>
+      <HashCode>QAAAAAICAgAAAgAAAAAAACAAAABAgACAQQAAAAAAACA=</HashCode>
+      <FileName>Characters\Oggy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OGGY.Gian">
+  <Class Name="OGGY.Characters.Gian">
     <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Gian.cs</FileName>
+      <FileName>Characters\Gian.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="OGGY.Background">
-    <Position X="6.75" Y="0.5" Width="1.5" />
+  <Class Name="OGGY.Bground.Kitchen">
+    <Position X="9.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
-      <FileName>Background.cs</FileName>
+      <HashCode>AAAAAICAAAAAAgAAAAAAAAAAEAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Background\Kitchen.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="OGGY.Kitchen">
-    <Position X="6.75" Y="2" Width="1.5" />
+  <Class Name="OGGY.Characters.Coin">
+    <Position X="7" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Kitchen.cs</FileName>
+      <HashCode>AAAAAAACAAAAAgAAAAAIAAAAAAAAAAAAQAQAAAABACA=</HashCode>
+      <FileName>Characters\Coin.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OGGY.Coin" Collapsed="true">
-    <Position X="4.75" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAgAAAAAIAAAAAAAAAAAAQAAAAAABACA=</HashCode>
-      <FileName>Coin.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="OGGY.VatCan" Collapsed="true">
-    <Position X="4.75" Y="3.25" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Nested Types" Collapsed="false" />
-    </Compartments>
+  <Class Name="OGGY.Characters.VatCan">
+    <Position X="5" Y="0.5" Width="1.5" />
     <NestedTypes>
-      <Enum Name="OGGY.VatCan.LoaiVatCan" Collapsed="true">
+      <Enum Name="OGGY.Characters.VatCan.LoaiVatCan" Collapsed="true">
         <TypeIdentifier>
-          <NewMemberFileName>VatCan.cs</NewMemberFileName>
+          <NewMemberFileName>Characters\VatCan.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAgAAAAAIACAAAAAAgAAAQAAAAAAAACA=</HashCode>
-      <FileName>VatCan.cs</FileName>
+      <HashCode>AAAAAAACAAAAAgAAABAIAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Characters\VatCan.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="OGGY.IBackground" Collapsed="true">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+  <Class Name="OGGY.Bground.Background" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IBackground.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Background\Background.cs</FileName>
     </TypeIdentifier>
-  </Interface>
-  <Interface Name="OGGY.ICharacter" Collapsed="true">
-    <Position X="10.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ICharacter.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="OGGY.IMovable" Collapsed="true">
-    <Position X="8.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IMovable.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

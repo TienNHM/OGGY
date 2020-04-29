@@ -14,7 +14,7 @@ namespace OGGY
         static void PlayMusic(string path)
         {
             player = new SoundPlayer(path);
-            player.PlaySync();
+            player.Play();
         }
 
         public static void Background()
@@ -72,6 +72,12 @@ namespace OGGY
         public static void Rolling()
         {
             string path = "assets/music/Rolling.wav";
+            PlayMusic(path);
+        }
+
+        public static void Jump()
+        {
+            string path = "assets/music/Jump.wav";
             PlayMusic(path);
         }
     }
