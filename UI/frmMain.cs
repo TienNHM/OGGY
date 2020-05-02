@@ -115,6 +115,7 @@ namespace OGGY
                 {
                     //Dung dong ho, ket thuc game
                     timer.Enabled = false;
+                    FX.OggyCry();
                     //Ket thuc game, chuyen sang form Menu de xem ket qua
                     using (var endGame = new EndGame(scores))
                     {

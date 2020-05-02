@@ -28,75 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExit = new System.Windows.Forms.Button();
-            this.picBgMusic = new System.Windows.Forms.PictureBox();
             this.picFXMusic = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picBgMusic = new System.Windows.Forms.PictureBox();
             this.picNew = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.picInfo = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblHighScore = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.picExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNew)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(211, 46);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(51, 34);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "EXIT";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // picBgMusic
-            // 
-            this.picBgMusic.BackColor = System.Drawing.Color.Transparent;
-            this.picBgMusic.Image = global::OGGY.Properties.Resources.opt_music;
-            this.picBgMusic.Location = new System.Drawing.Point(22, 46);
-            this.picBgMusic.Margin = new System.Windows.Forms.Padding(2);
-            this.picBgMusic.Name = "picBgMusic";
-            this.picBgMusic.Size = new System.Drawing.Size(38, 34);
-            this.picBgMusic.TabIndex = 5;
-            this.picBgMusic.TabStop = false;
-            this.picBgMusic.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // picFXMusic
             // 
             this.picFXMusic.BackColor = System.Drawing.Color.Transparent;
-            this.picFXMusic.Image = global::OGGY.Properties.Resources.opt_sound;
-            this.picFXMusic.Location = new System.Drawing.Point(82, 46);
+            this.picFXMusic.BackgroundImage = global::OGGY.Properties.Resources.opt_nomusic;
+            this.picFXMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picFXMusic.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picFXMusic.Location = new System.Drawing.Point(70, 0);
             this.picFXMusic.Margin = new System.Windows.Forms.Padding(2);
             this.picFXMusic.Name = "picFXMusic";
-            this.picFXMusic.Size = new System.Drawing.Size(39, 34);
-            this.picFXMusic.TabIndex = 6;
+            this.picFXMusic.Size = new System.Drawing.Size(70, 51);
+            this.picFXMusic.TabIndex = 5;
             this.picFXMusic.TabStop = false;
-            this.picFXMusic.Click += new System.EventHandler(this.picFXMusic_Click);
+            this.picFXMusic.Click += new System.EventHandler(this.PicFXMusic_Click);
             // 
-            // pictureBox3
+            // picBgMusic
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::OGGY.Properties.Resources.logo_text_EN;
-            this.pictureBox3.Location = new System.Drawing.Point(427, 46);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(643, 423);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.picBgMusic.BackColor = System.Drawing.Color.Transparent;
+            this.picBgMusic.BackgroundImage = global::OGGY.Properties.Resources.opt_nosound;
+            this.picBgMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picBgMusic.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picBgMusic.Location = new System.Drawing.Point(0, 0);
+            this.picBgMusic.Margin = new System.Windows.Forms.Padding(2);
+            this.picBgMusic.Name = "picBgMusic";
+            this.picBgMusic.Size = new System.Drawing.Size(70, 51);
+            this.picBgMusic.TabIndex = 6;
+            this.picBgMusic.TabStop = false;
+            this.picBgMusic.Click += new System.EventHandler(this.PicBgMusic_Click);
             // 
             // picNew
             // 
@@ -109,31 +87,35 @@
             this.picNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picNew.TabIndex = 8;
             this.picNew.TabStop = false;
-            this.picNew.Click += new System.EventHandler(this.picNew_Click);
+            this.picNew.Click += new System.EventHandler(this.PicNew_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::OGGY.Properties.Resources.menu_fridge;
-            this.pictureBox5.Location = new System.Drawing.Point(22, 229);
+            this.pictureBox5.BackgroundImage = global::OGGY.Properties.Resources.menu_fridge;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(22, 207);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(169, 423);
+            this.pictureBox5.Size = new System.Drawing.Size(188, 445);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox6
+            // picInfo
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(149, 46);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 34);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.picInfo.BackColor = System.Drawing.Color.Transparent;
+            this.picInfo.BackgroundImage = global::OGGY.Properties.Resources.counter_plus;
+            this.picInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picInfo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picInfo.Location = new System.Drawing.Point(140, 0);
+            this.picInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.picInfo.Name = "picInfo";
+            this.picInfo.Size = new System.Drawing.Size(70, 51);
+            this.picInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picInfo.TabIndex = 10;
+            this.picInfo.TabStop = false;
+            this.picInfo.Click += new System.EventHandler(this.PicInfo_Click);
             // 
             // pictureBox7
             // 
@@ -147,75 +129,92 @@
             this.pictureBox7.TabIndex = 11;
             this.pictureBox7.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::OGGY.Properties.Resources.bomb;
-            this.pictureBox8.Location = new System.Drawing.Point(264, 619);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(112, 84);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 12;
-            this.pictureBox8.TabStop = false;
-            // 
             // lblHighScore
             // 
             this.lblHighScore.BackColor = System.Drawing.Color.White;
             this.lblHighScore.Font = new System.Drawing.Font("Calibri", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.lblHighScore.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblHighScore.Location = new System.Drawing.Point(67, 389);
+            this.lblHighScore.Location = new System.Drawing.Point(53, 370);
             this.lblHighScore.Name = "lblHighScore";
-            this.lblHighScore.Size = new System.Drawing.Size(95, 58);
+            this.lblHighScore.Size = new System.Drawing.Size(139, 58);
             this.lblHighScore.TabIndex = 13;
             this.lblHighScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::OGGY.Properties.Resources.logo_text_EN;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(254, 80);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(854, 388);
+            this.panel1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Controls.Add(this.picExit);
+            this.panel2.Controls.Add(this.picInfo);
+            this.panel2.Controls.Add(this.picFXMusic);
+            this.panel2.Controls.Add(this.picBgMusic);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1300, 51);
+            this.panel2.TabIndex = 16;
+            // 
+            // picExit
+            // 
+            this.picExit.BackgroundImage = global::OGGY.Properties.Resources.close_btn_pressed;
+            this.picExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picExit.Location = new System.Drawing.Point(1243, 0);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(57, 51);
+            this.picExit.TabIndex = 0;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.PicExit_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = global::OGGY.Properties.Resources.menu_bg;
-            this.ClientSize = new System.Drawing.Size(1109, 630);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblHighScore);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.picNew);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.picFXMusic);
-            this.Controls.Add(this.picBgMusic);
-            this.Controls.Add(this.btnExit);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNew)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox picBgMusic;
         private System.Windows.Forms.PictureBox picFXMusic;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picBgMusic;
         private System.Windows.Forms.PictureBox picNew;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picInfo;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblHighScore;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox picExit;
     }
 }
 

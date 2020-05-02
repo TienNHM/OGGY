@@ -5,25 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using System.Reflection;
+using System.Threading;
+using WMPLib;
 
 namespace OGGY
 {
     public static class FX
     {
-        static SoundPlayer player;
+        private static SoundPlayer player;
+        private static WindowsMediaPlayer sound;
+
         static void PlayMusic(string path)
         {
-            player = new SoundPlayer(path);
-            player.Play();
+            using (player = new SoundPlayer(path))
+            {
+                player.Play();
+            }
         }
 
         public static void Background()
         {
-            //Duong dan den file *.wav
-            //Truy xuat file nhu cach hôm tui làm Assembly
             string path = "assets/music/Background.wav";
-            //Vì đã embbed vào project nên file đã nằm trong thư mục bin rồi
-            //ông chỉ cần truy cập theo thư mục như trên
             PlayMusic(path);
         }
 
@@ -51,7 +53,7 @@ namespace OGGY
             PlayMusic(path);
         }
 
-        public static void OggyCryh()
+        public static void OggyCry()
         {
             string path = "assets/music/OggyCry.wav";
             PlayMusic(path);
