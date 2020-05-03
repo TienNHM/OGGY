@@ -4,16 +4,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace OGGY
+namespace OGGY.Characters
 {
-    public class Gian : Character, IMovable
+    public class Gian : Character
     {
-        #region Fields
-        #endregion
-
         public override void Draw(Graphics gp)
         {
-            
+
         }
         protected override Point GetLocation()
         {

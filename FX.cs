@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Media;
-using System.Reflection;
+﻿using System.Media;
 
 namespace OGGY
 {
     public static class FX
     {
-        static SoundPlayer player;
+        private static SoundPlayer player;
+
         static void PlayMusic(string path)
         {
-            player = new SoundPlayer(path);
-            player.PlaySync();
+            using (player = new SoundPlayer(path))
+            {
+                player.Load();
+                player.Play();
+            }
         }
 
         public static void Background()
         {
-            //Duong dan den file *.wav
-            //Truy xuat file nhu cach hôm tui làm Assembly
             string path = "assets/music/Background.wav";
-            //Vì đã embbed vào project nên file đã nằm trong thư mục bin rồi
-            //ông chỉ cần truy cập theo thư mục như trên
             PlayMusic(path);
         }
 
@@ -72,6 +66,12 @@ namespace OGGY
         public static void Rolling()
         {
             string path = "assets/music/Rolling.wav";
+            PlayMusic(path);
+        }
+
+        public static void Jump()
+        {
+            string path = "assets/music/Jump.wav";
             PlayMusic(path);
         }
     }
