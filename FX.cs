@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Media;
-using System.Reflection;
-using System.Threading;
-using WMPLib;
+﻿using System.Media;
 
 namespace OGGY
 {
     public static class FX
     {
         private static SoundPlayer player;
-        private static WindowsMediaPlayer sound;
 
         static void PlayMusic(string path)
         {
             using (player = new SoundPlayer(path))
             {
+                player.Load();
                 player.Play();
             }
         }
