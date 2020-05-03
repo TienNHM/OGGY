@@ -51,7 +51,7 @@ namespace OGGY
             PlayMusic(path);
         }
 
-        public static void OggyCryh()
+        public static void OggyCry()
         {
             string path = "assets/music/OggyCry.wav";
             PlayMusic(path);

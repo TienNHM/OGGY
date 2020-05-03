@@ -65,9 +65,6 @@
     <Compile Include="FX.cs" />
     <Compile Include="FXMusic.cs" />
     <Compile Include="Gian.cs" />
-    <Compile Include="IBackground.cs" />
-    <Compile Include="ICharacter.cs" />
-    <Compile Include="IMovable.cs" />
     <Compile Include="Kitchen.cs" />
     <Compile Include="Oggy.cs" />
     <Compile Include="Program.cs" />

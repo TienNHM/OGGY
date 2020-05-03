@@ -27,6 +27,7 @@ namespace OGGY
             gp = context.Allocate(this.CreateGraphics(), this.DisplayRectangle);
             picBgMusic.Image = OGGY.Properties.Resources.opt_music;
             picFXMusic.Image = OGGY.Properties.Resources.opt_sound;
+            //Đặt tên lại cho pictureBox3 :D
             pictureBox3.Image = OGGY.Properties.Resources.logo_text_EN;
             lblHighScore.Text = iHighScore.ToString();
             

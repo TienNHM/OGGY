@@ -53,7 +53,7 @@
             this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(264, 58);
+            this.btnExit.Location = new System.Drawing.Point(363, 58);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(64, 42);
@@ -66,7 +66,7 @@
             // 
             this.picBgMusic.BackColor = System.Drawing.Color.Transparent;
             this.picBgMusic.Image = global::OGGY.Properties.Resources.opt_music;
-            this.picBgMusic.Location = new System.Drawing.Point(28, 58);
+            this.picBgMusic.Location = new System.Drawing.Point(102, 58);
             this.picBgMusic.Margin = new System.Windows.Forms.Padding(2);
             this.picBgMusic.Name = "picBgMusic";
             this.picBgMusic.Size = new System.Drawing.Size(48, 42);
@@ -78,7 +78,7 @@
             // 
             this.picFXMusic.BackColor = System.Drawing.Color.Transparent;
             this.picFXMusic.Image = global::OGGY.Properties.Resources.opt_sound;
-            this.picFXMusic.Location = new System.Drawing.Point(102, 58);
+            this.picFXMusic.Location = new System.Drawing.Point(182, 58);
             this.picFXMusic.Margin = new System.Windows.Forms.Padding(2);
             this.picFXMusic.Name = "picFXMusic";
             this.picFXMusic.Size = new System.Drawing.Size(49, 42);
@@ -102,7 +102,7 @@
             // 
             this.picNew.BackColor = System.Drawing.Color.Transparent;
             this.picNew.Image = global::OGGY.Properties.Resources.new_badge_en;
-            this.picNew.Location = new System.Drawing.Point(749, 591);
+            this.picNew.Location = new System.Drawing.Point(811, 555);
             this.picNew.Margin = new System.Windows.Forms.Padding(2);
             this.picNew.Name = "picNew";
             this.picNew.Size = new System.Drawing.Size(274, 139);
@@ -115,22 +115,23 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::OGGY.Properties.Resources.menu_fridge;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 286);
+            this.pictureBox5.Location = new System.Drawing.Point(102, 118);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(211, 529);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Location = new System.Drawing.Point(186, 58);
+            this.pictureBox6.Image = global::OGGY.Properties.Resources.chamhoi1;
+            this.pictureBox6.Location = new System.Drawing.Point(261, 58);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(52, 42);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -139,7 +140,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::OGGY.Properties.Resources.bob_sleep_00;
-            this.pictureBox7.Location = new System.Drawing.Point(1198, 671);
+            this.pictureBox7.Location = new System.Drawing.Point(1342, 483);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(250, 252);
@@ -151,11 +152,11 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::OGGY.Properties.Resources.bomb;
-            this.pictureBox8.Location = new System.Drawing.Point(330, 774);
+            this.pictureBox8.Location = new System.Drawing.Point(349, 618);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(140, 105);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.Size = new System.Drawing.Size(128, 91);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 12;
             this.pictureBox8.TabStop = false;
             // 
@@ -164,7 +165,7 @@
             this.lblHighScore.BackColor = System.Drawing.Color.White;
             this.lblHighScore.Font = new System.Drawing.Font("Calibri", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.lblHighScore.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblHighScore.Location = new System.Drawing.Point(84, 486);
+            this.lblHighScore.Location = new System.Drawing.Point(157, 315);
             this.lblHighScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHighScore.Name = "lblHighScore";
             this.lblHighScore.Size = new System.Drawing.Size(119, 72);
@@ -176,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = global::OGGY.Properties.Resources.menu_bg;
-            this.ClientSize = new System.Drawing.Size(1625, 938);
+            this.ClientSize = new System.Drawing.Size(1625, 768);
             this.Controls.Add(this.lblHighScore);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -189,9 +190,9 @@
             this.Controls.Add(this.btnExit);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).EndInit();
