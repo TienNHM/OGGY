@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Reflection;
 
 namespace OGGY.Bground
 {
@@ -29,17 +28,16 @@ namespace OGGY.Bground
 
         public Kitchen()
         {
-            var asm = Assembly.GetExecutingAssembly();
-            background = Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.menu.background.png"));
+            background = Properties.Resources.img_background;
             images = new List<Image>
             {
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.trashbin.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.fridge.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.chair.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.game.olivia-poster.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.locker_bot.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.owen.png")),
-                Image.FromStream(asm.GetManifestResourceStream("OGGY.assets.kitchen.clock.png")),
+                Properties.Resources.trashbin,
+                Properties.Resources.fridge,
+                Properties.Resources.chair,
+                Properties.Resources.olivia_poster,
+                Properties.Resources.locker_bot,
+                Properties.Resources.owen,
+                Properties.Resources.clock
             };
             points = new List<Point>
             {

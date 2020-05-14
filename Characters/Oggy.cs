@@ -42,10 +42,13 @@ namespace OGGY.Characters
         public static int iHeight { get; } = 240;
         public static int iLeft { get; } = 80;
         public static int iTop { get; } = frmMain.iHeight - 280;
+
+        public int Stars = 3;
         #endregion
 
         public Oggy()
         {
+            Stars = 3;
             Location = new Point(iLeft, iTop);
             runRect = new Rectangle(iLeft, iTop, iWidth, iHeight);
             var assembly = Assembly.GetExecutingAssembly();
@@ -105,32 +108,6 @@ namespace OGGY.Characters
             if (index < 6) y -= iHight_EachStep * index;
             else y -= iHight_EachStep * (12 - index);
             return new Point(iLeft, y);
-        }
-
-        /// <summary>
-        /// Dùng để xác định số Coin mà Oggy ăn được 
-        /// </summary>
-        /// <param name="lCoins">Danh sách các Coins</param>
-        /// <returns>Một số nguyên cho biết số coin ăn được </returns>
-        public int Earns(List<Coin> lCoins)
-        {
-            int re = 0;
-            for (int i = 0; i < lCoins.Count; i++) 
-            {
-                if (lCoins[i].bVisible == true)
-                    if (lCoins[i].Location.X <= Location.X + Oggy.iWidth && lCoins[i].Location.Y + Coin.iHeight >= Location.Y + 80)
-                    {
-                        lCoins[i].bVisible = false;
-                        if (i == 7) re += 5;        //Bonus
-                        else if (i == 8) re += 10;  //Double Bonus
-                        else re++;
-                        //Vì tại 1 thời điểm, thực tế chỉ earns 1 coin
-                        break;
-                    }
-            }
-            //Play FX music
-            if (re > 0) FX.CoinPickup();
-            return re;
         }
     }
 }
