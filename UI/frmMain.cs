@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using System.Reflection;
-using System.Media;
-using OGGY.Bground;
+﻿using OGGY.Bground;
 using OGGY.Characters;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace OGGY
 {
@@ -40,6 +32,11 @@ namespace OGGY
         private List<VatCan> lVatCan;
 
         /// <summary>
+        /// Dùng để chứa các picturebox là các stars còn lại của oggy 
+        /// </summary>
+        private List<PictureBox> picStars;
+
+        /// <summary>
         /// Dùng để xác định background của game 
         /// </summary>
         private Background background;
@@ -52,13 +49,13 @@ namespace OGGY
         private int indexVatCan { get; set; } = -1;
         #endregion
 
-
         public frmMain()
         {
             InitializeComponent();
             context = BufferedGraphicsManager.Current;
             gp = context.Allocate(this.CreateGraphics(), this.DisplayRectangle);
             InitGame();
+            PlayFXMucsic();
             timer.Enabled = true;
             iWidth = this.Width;
             iHeight = this.Height;
@@ -73,6 +70,7 @@ namespace OGGY
             background = new Kitchen();
             oggy = new Oggy();
             lCoins = new List<Coin>();
+            picStars = new List<PictureBox> { picStar01, picStar02, picStar03 };
             for (int i = 0; i < 9; i++)
                 lCoins.Add(new Coin(i));
             lCoins[8].bVisible = false;
@@ -111,21 +109,35 @@ namespace OGGY
             GetIndex();
             if (indexVatCan >= 0)
             {
-                if (lVatCan[indexVatCan].VaCham(oggy))
+                //if (lVatCan[indexVatCan].VaCham(oggy))
+                if (VaCham.VaChamVatCan(oggy, lVatCan[indexVatCan]))
                 {
-                    //Dung dong ho, ket thuc game
-                    timer.Enabled = false;
-                    FX.OggyCry();
-                    //Ket thuc game, chuyen sang form Menu de xem ket qua
-                    using (var endGame = new EndGame(scores))
+                    oggy.Stars--;
+                    picStars[oggy.Stars].Visible = false;
+                    if (oggy.Stars == 0)
+                        EndGame();
+                    else
                     {
-                        endGame.ShowDialog();
+                        lVatCan[indexVatCan].bVisible = false;
+                        lVatCan[indexVatCan].Location.X = frmMain.iWidth;
                     }
-                    this.Dispose();
                 }
             }
-            scores += oggy.Earns(lCoins);
+            scores += VaCham.Earns(oggy, lCoins);
             lblScores.Text = scores.ToString();
+        }
+
+        private void EndGame()
+        {
+            //Dung dong ho, ket thuc game
+            timer.Enabled = false;
+            if (frmMenu.isPlayFXMucsic) FX.OggyCry();
+            //Ket thuc game, chuyen sang form Menu de xem ket qua
+            using (var endGame = new EndGame(scores))
+            {
+                endGame.ShowDialog();
+            }
+            this.Dispose();
         }
 
         /// <summary>
@@ -180,6 +192,20 @@ namespace OGGY
             timer.Enabled = true;
             lblPlay.Visible = false;
             lblPause.Visible = true;
+        }
+
+        private void picFXMusic_Click(object sender, EventArgs e)
+        {
+            frmMenu.isPlayFXMucsic = !frmMenu.isPlayFXMucsic;
+            PlayFXMucsic();
+        }
+
+        private void PlayFXMucsic()
+        {
+            if (frmMenu.isPlayFXMucsic)
+                picFXMusic.BackgroundImage = OGGY.Properties.Resources.opt_music;
+            else
+                picFXMusic.BackgroundImage = OGGY.Properties.Resources.opt_nomusic;
         }
     }
 }

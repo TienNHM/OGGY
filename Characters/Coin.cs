@@ -24,12 +24,18 @@ namespace OGGY.Characters
         {
             this.index = index;
             Assembly assembly = Assembly.GetExecutingAssembly();
-            if (index < 7)
-                Img = Image.FromStream(assembly.GetManifestResourceStream($"OGGY.assets.game.coin{index}.png"));
-            else if (index == 7)
-                Img = Image.FromStream(assembly.GetManifestResourceStream("OGGY.assets.game.hud-powerbtn.png"));
-            else if (index == 8)
-                Img = Image.FromStream(assembly.GetManifestResourceStream("OGGY.assets.game.heart_full.png"));
+            switch (index)
+            {
+                case 0: Img = Properties.Resources.coin0;           break;
+                case 1: Img = Properties.Resources.coin1;           break;
+                case 2: Img = Properties.Resources.coin2;           break;
+                case 3: Img = Properties.Resources.coin3;           break;
+                case 4: Img = Properties.Resources.coin4;           break;
+                case 5: Img = Properties.Resources.coin5;           break;
+                case 6: Img = Properties.Resources.coin6;           break;
+                case 7: Img = Properties.Resources.hud_powerbtn;    break;
+                case 8: Img = Properties.Resources.heart_full; ;    break;
+            }
             Location = GetLocation();
         }
 
