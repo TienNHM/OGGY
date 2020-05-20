@@ -67,6 +67,7 @@ namespace OGGY.Characters
         /// </summary>
         public void Jump()
         {
+            if (isJump) return;
             isJump = true;
             indexOggyPic = 0;
         }

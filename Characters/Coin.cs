@@ -55,9 +55,9 @@ namespace OGGY.Characters
 
         public override void Draw(Graphics gp)
         {
+            Location.X -= 30;
             if (bVisible == true)
             {
-                Location.X -= 30;
                 gp.DrawImageUnscaledAndClipped(Img, new Rectangle(Location.X, Location.Y, iWidth, iHeight));
                 //gp.DrawRectangle(new Pen(Color.Yellow), new Rectangle(Location.X, Location.Y, iWidth, iHeight));
                 if (Location.X + Img.Width <= 0)
@@ -69,12 +69,12 @@ namespace OGGY.Characters
             }
             else
             {
-                Location.X -= 30;
                 if (Location.X + Img.Width <= 0)
                 {
-                    if (index != 8) bVisible = true;
                     if (index >= 7) Location = GetLocation();
                     else Location.X = frmMain.iWidth;
+                    if (index != 8) bVisible = true;
+                    Location.Y += random.Next(-20, 20);
                 }
             }
         }

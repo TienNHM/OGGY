@@ -37,7 +37,7 @@ namespace OGGY.Bground
                 Properties.Resources.olivia_poster,
                 Properties.Resources.locker_bot,
                 Properties.Resources.owen,
-                Properties.Resources.clock
+                Properties.Resources.clock,
             };
             points = new List<Point>
             {

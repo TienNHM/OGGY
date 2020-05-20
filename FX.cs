@@ -1,18 +1,16 @@
-﻿using System.Media;
-using System.IO;
-using System.Windows.Forms;
+﻿using System.IO;
+using System.Media;
 
 namespace OGGY
 {
     public static class FX
     {
-        private static SoundPlayer player;
+        private static SoundPlayer player = new SoundPlayer();
 
         public static void PlayMusic(Stream src)
         {
             using (player = new SoundPlayer(src))
             {
-                player.Load();
                 player.Play();
             }
         }

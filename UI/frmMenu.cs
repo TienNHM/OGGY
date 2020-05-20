@@ -2,7 +2,6 @@
 using System.Configuration;
 using System.Drawing;
 using System.Media;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace OGGY
@@ -10,28 +9,20 @@ namespace OGGY
     public partial class frmMenu : Form
     {
         #region Properties
-        public static int iHighScore = Convert.ToInt32(ConfigurationManager.AppSettings["iHighScore"]);
         private SoundPlayer playerMusic = new SoundPlayer();
+
+        //Đọc các giá trị được lưu trong App.config 
+        public static int iHighScore = Convert.ToInt32(ConfigurationManager.AppSettings["iHighScore"]);
         public static bool isPlayBgMusic = Convert.ToBoolean(ConfigurationManager.AppSettings["isPlayBgMusic"]);
         public static bool isPlayFXMucsic = Convert.ToBoolean(ConfigurationManager.AppSettings["isPlayFXMucsic"]);
-
-        private BufferedGraphics graphics;
-        private BufferedGraphicsContext context;
         #endregion
 
         public frmMenu()
         {
             InitializeComponent();
-            context = BufferedGraphicsManager.Current;
-            graphics = context.Allocate(this.CreateGraphics(), this.DisplayRectangle);
             lblHighScore.Text = iHighScore.ToString();
             PlayBackgroundMusic();
             PlayFXMucsic();
-        }
-
-        private void PicNew_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void PicFXMusic_Click(object sender, EventArgs e)
@@ -92,26 +83,25 @@ namespace OGGY
             }
         }
 
-        private void frmMenu_Paint(object sender, PaintEventArgs e)
+        private void FrmMenu_Paint(object sender, PaintEventArgs e)
         {
             Bitmap bitmap = Properties.Resources.img_background;
-            graphics.Graphics.DrawImageUnscaledAndClipped(bitmap, this.DisplayRectangle);
+            e.Graphics.DrawImageUnscaledAndClipped(bitmap, this.DisplayRectangle);
             bitmap = Properties.Resources.logo_text_EN;
-            graphics.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(280, 80, 850, 350));
+            e.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(280, 80, 850, 350));
             bitmap = Properties.Resources.menu_fridge;
-            graphics.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(40, 200, 180, 450));
+            e.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(40, 200, 180, 450));
             bitmap = Properties.Resources.bob_sleep_00;
-            graphics.Graphics.DrawImage(bitmap, new Rectangle(950, 540, 220, 120));
+            e.Graphics.DrawImage(bitmap, new Rectangle(950, 540, 220, 120));
             bitmap = Properties.Resources.new_badge_en;
-            graphics.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(550, 420, 150, 110));
-            graphics.Render();
+            e.Graphics.DrawImageUnscaledAndClipped(bitmap, new Rectangle(550, 420, 150, 110));
         }
 
         private void EventClick(object sender, MouseEventArgs e)
         {
             Rectangle rect = new Rectangle(550, 420, 150, 110);
             if (rect.Left <= e.X && e.X <= rect.Right)
-                if (rect.Top <= e.Y && e.Y <= rect.Bottom) 
+                if (rect.Top <= e.Y && e.Y <= rect.Bottom)
                 {
                     frmMain frmMain = new frmMain();
                     playerMusic.Stop();

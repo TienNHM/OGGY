@@ -27,7 +27,7 @@
     <SupportUrl>https://www.facebook.com/01.tien</SupportUrl>
     <ProductName>OGGY</ProductName>
     <PublisherName>MTQK</PublisherName>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -1138,8 +1138,7 @@
     <EmbeddedResource Include="assets\game\5_stars.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <None Include="Resources\play1.png" />
-    <None Include="Resources\play.png" />
+    <None Include="assets\game\arrow-left.png" />
     <Content Include="oggy.ico" />
   </ItemGroup>
   <ItemGroup />

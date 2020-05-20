@@ -164,13 +164,15 @@ namespace OGGY
                     //FX.Jump();
                     break;
                 case Keys.Enter:
-                    //
+                    //Tăng tốc 
+                    Draw(this, new PaintEventArgs(gp.Graphics, this.DisplayRectangle));
                     break;
             }
         }
 
         private void LblQuit_Click(object sender, EventArgs e)
         {
+            lblPause_Click(lblPause, new EventArgs());
             DialogResult ans = MessageBox.Show("Bạn có muốn kết thúc game không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (ans == DialogResult.Yes)
             {
