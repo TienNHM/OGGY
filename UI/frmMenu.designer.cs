@@ -35,13 +35,11 @@
             this.picInfo = new System.Windows.Forms.PictureBox();
             this.picFXMusic = new System.Windows.Forms.PictureBox();
             this.picBgMusic = new System.Windows.Forms.PictureBox();
-            this.picNew = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNew)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHighScore
@@ -123,18 +121,6 @@
             this.picBgMusic.TabStop = false;
             this.picBgMusic.Click += new System.EventHandler(this.PicBgMusic_Click);
             // 
-            // picNew
-            // 
-            this.picNew.BackColor = System.Drawing.Color.Transparent;
-            this.picNew.Location = new System.Drawing.Point(1287, 686);
-            this.picNew.Margin = new System.Windows.Forms.Padding(2);
-            this.picNew.Name = "picNew";
-            this.picNew.Size = new System.Drawing.Size(10, 10);
-            this.picNew.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNew.TabIndex = 8;
-            this.picNew.TabStop = false;
-            this.picNew.Click += new System.EventHandler(this.PicNew_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -142,22 +128,19 @@
             this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblHighScore);
-            this.Controls.Add(this.picNew);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OGGY";
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmMenu_Paint);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmMenu_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.EventClick);
-            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.EventClick);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBgMusic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNew)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -169,7 +152,6 @@
         private System.Windows.Forms.Label lblHighScore;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox picExit;
-        private System.Windows.Forms.PictureBox picNew;
     }
 }
 

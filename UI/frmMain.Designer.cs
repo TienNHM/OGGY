@@ -74,32 +74,33 @@
             this.picFXMusic.BackColor = System.Drawing.Color.Transparent;
             this.picFXMusic.BackgroundImage = global::OGGY.Properties.Resources.opt_nomusic;
             this.picFXMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picFXMusic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picFXMusic.Location = new System.Drawing.Point(281, 0);
+            this.picFXMusic.Location = new System.Drawing.Point(399, 0);
             this.picFXMusic.Margin = new System.Windows.Forms.Padding(2);
             this.picFXMusic.Name = "picFXMusic";
-            this.picFXMusic.Size = new System.Drawing.Size(70, 61);
+            this.picFXMusic.Size = new System.Drawing.Size(60, 61);
             this.picFXMusic.TabIndex = 7;
             this.picFXMusic.TabStop = false;
             this.picFXMusic.Click += new System.EventHandler(this.picFXMusic_Click);
             // 
             // pnlStars
             // 
+            this.pnlStars.AutoSize = true;
             this.pnlStars.Controls.Add(this.picStar03);
             this.pnlStars.Controls.Add(this.picStar02);
             this.pnlStars.Controls.Add(this.picStar01);
-            this.pnlStars.Location = new System.Drawing.Point(937, 5);
+            this.pnlStars.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlStars.Location = new System.Drawing.Point(89, 0);
             this.pnlStars.Name = "pnlStars";
-            this.pnlStars.Size = new System.Drawing.Size(153, 50);
+            this.pnlStars.Size = new System.Drawing.Size(183, 61);
             this.pnlStars.TabIndex = 5;
             // 
             // picStar03
             // 
             this.picStar03.Dock = System.Windows.Forms.DockStyle.Left;
             this.picStar03.Image = global::OGGY.Properties.Resources.icon_super;
-            this.picStar03.Location = new System.Drawing.Point(100, 0);
+            this.picStar03.Location = new System.Drawing.Point(122, 0);
             this.picStar03.Name = "picStar03";
-            this.picStar03.Size = new System.Drawing.Size(50, 50);
+            this.picStar03.Size = new System.Drawing.Size(61, 61);
             this.picStar03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStar03.TabIndex = 3;
             this.picStar03.TabStop = false;
@@ -108,9 +109,9 @@
             // 
             this.picStar02.Dock = System.Windows.Forms.DockStyle.Left;
             this.picStar02.Image = global::OGGY.Properties.Resources.icon_super;
-            this.picStar02.Location = new System.Drawing.Point(50, 0);
+            this.picStar02.Location = new System.Drawing.Point(61, 0);
             this.picStar02.Name = "picStar02";
-            this.picStar02.Size = new System.Drawing.Size(50, 50);
+            this.picStar02.Size = new System.Drawing.Size(61, 61);
             this.picStar02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStar02.TabIndex = 4;
             this.picStar02.TabStop = false;
@@ -121,31 +122,31 @@
             this.picStar01.Image = global::OGGY.Properties.Resources.icon_super;
             this.picStar01.Location = new System.Drawing.Point(0, 0);
             this.picStar01.Name = "picStar01";
-            this.picStar01.Size = new System.Drawing.Size(50, 50);
+            this.picStar01.Size = new System.Drawing.Size(61, 61);
             this.picStar01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStar01.TabIndex = 5;
             this.picStar01.TabStop = false;
             // 
             // lblPlay
             // 
-            this.lblPlay.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblPlay.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblPlay.Font = new System.Drawing.Font("Bauhaus 93", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.lblPlay.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lblPlay.Image = global::OGGY.Properties.Resources.btn_filter_orange;
-            this.lblPlay.Location = new System.Drawing.Point(102, 0);
+            this.lblPlay.Location = new System.Drawing.Point(1022, 0);
             this.lblPlay.Name = "lblPlay";
-            this.lblPlay.Size = new System.Drawing.Size(179, 61);
+            this.lblPlay.Size = new System.Drawing.Size(176, 61);
             this.lblPlay.TabIndex = 3;
-            this.lblPlay.Text = "PLAY";
+            this.lblPlay.Text = "RESUME";
             this.lblPlay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblPlay.Visible = false;
             this.lblPlay.Click += new System.EventHandler(this.lblPlay_Click);
             // 
             // lblPause
             // 
-            this.lblPause.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblPause.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblPause.Image = global::OGGY.Properties.Resources.pause_btn;
-            this.lblPause.Location = new System.Drawing.Point(0, 0);
+            this.lblPause.Location = new System.Drawing.Point(1198, 0);
             this.lblPause.Name = "lblPause";
             this.lblPause.Size = new System.Drawing.Size(102, 61);
             this.lblPause.TabIndex = 2;
@@ -154,11 +155,11 @@
             // lblQuit
             // 
             this.lblQuit.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblQuit.Image = global::OGGY.Properties.Resources.close_btn;
-            this.lblQuit.Location = new System.Drawing.Point(1235, 0);
+            this.lblQuit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblQuit.Image = ((System.Drawing.Image)(resources.GetObject("lblQuit.Image")));
+            this.lblQuit.Location = new System.Drawing.Point(0, 0);
             this.lblQuit.Name = "lblQuit";
-            this.lblQuit.Size = new System.Drawing.Size(65, 61);
+            this.lblQuit.Size = new System.Drawing.Size(89, 61);
             this.lblQuit.TabIndex = 1;
             this.lblQuit.Click += new System.EventHandler(this.LblQuit_Click);
             // 
@@ -190,6 +191,7 @@
             this.Text = "Oggy";
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.FrmMain_PreviewKeyDown);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFXMusic)).EndInit();
             this.pnlStars.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picStar03)).EndInit();
