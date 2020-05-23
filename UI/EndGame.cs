@@ -20,5 +20,11 @@ namespace OGGY
         {
             this.Dispose();
         }
+
+        private void EndGame_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape || e.KeyCode == Keys.Enter)
+                this.Dispose();
+        }
     }
 }

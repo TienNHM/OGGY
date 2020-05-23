@@ -23,7 +23,7 @@
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <MapFileExtensions>false</MapFileExtensions>
     <SupportUrl>https://www.facebook.com/01.tien</SupportUrl>
     <ProductName>OGGY</ProductName>
     <PublisherName>MTQK</PublisherName>

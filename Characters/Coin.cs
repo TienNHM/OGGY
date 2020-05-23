@@ -74,7 +74,6 @@ namespace OGGY.Characters
                     if (index >= 7) Location = GetLocation();
                     else Location.X = frmMain.iWidth;
                     if (index != 8) bVisible = true;
-                    Location.Y += random.Next(-20, 20);
                 }
             }
         }

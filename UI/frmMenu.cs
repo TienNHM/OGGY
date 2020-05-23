@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace OGGY
 {
@@ -39,7 +40,10 @@ namespace OGGY
                 picFXMusic.BackgroundImage = OGGY.Properties.Resources.opt_nomusic;
         }
 
-        private void PicExit_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Khi nguoi choi muon thoat game
+        /// </summary>
+        private void Exit()
         {
             DialogResult traLoi = MessageBox.Show("Bạn muốn thoát game chứ?", "Xác nhận", MessageBoxButtons.YesNo);
             if (traLoi == DialogResult.Yes)
@@ -54,6 +58,11 @@ namespace OGGY
 
                 Application.Exit();
             }
+        }
+
+        private void PicExit_Click(object sender, EventArgs e)
+        {
+            Exit();
         }
 
         private void PicInfo_Click(object sender, EventArgs e)
@@ -114,6 +123,12 @@ namespace OGGY
                         iHighScore = frmMain.scores;
                     lblHighScore.Text = iHighScore.ToString();
                 }
+        }
+
+        private void frmMenu_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Exit();
         }
     }
 }
