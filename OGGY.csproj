@@ -261,9 +261,6 @@
     <EmbeddedResource Include="assets\oggy\oggy-gameover-red-08.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="assets\oggy\oggy-headhit-000.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Include="assets\oggy\oggy-headhit-001.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

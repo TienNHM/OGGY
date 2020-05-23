@@ -15,6 +15,7 @@ namespace OGGY
         public static int iHeight = 700;
         private BufferedGraphics gp;
         private BufferedGraphicsContext context;
+        private int drawCount = 0;
 
         /// <summary>
         /// Nhân vật của game 
@@ -109,11 +110,11 @@ namespace OGGY
             GetIndex();
             if (indexVatCan >= 0)
             {
-                //if (lVatCan[indexVatCan].VaCham(oggy))
                 if (VaCham.VaChamVatCan(oggy, lVatCan[indexVatCan]))
                 {
                     oggy.Stars--;
                     picStars[oggy.Stars].Visible = false;
+                    oggy.Conflict();
                     if (oggy.Stars == 0)
                         EndGame();
                     else
@@ -156,6 +157,7 @@ namespace OGGY
 
         private void FrmMain_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
+            drawCount++;
             switch (e.KeyCode)
             {
                 case Keys.Up:
@@ -165,7 +167,8 @@ namespace OGGY
                     break;
                 case Keys.Enter:
                     //Tăng tốc 
-                    Draw(this, new PaintEventArgs(gp.Graphics, this.DisplayRectangle));
+                    if (drawCount % 5 != 0)
+                        Draw(this, new PaintEventArgs(gp.Graphics, this.DisplayRectangle));
                     break;
             }
         }
