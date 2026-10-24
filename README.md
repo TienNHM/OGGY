@@ -2,6 +2,13 @@
 
 # OGGY 🐱
 
+> ## 🌐 Chơi OGGY ngay trên trình duyệt! / Play OGGY in your browser!
+>
+> ### 👉 **[▶ CHƠI NGAY / PLAY NOW: oggy-adventure.tiennhm.io.vn](https://oggy-adventure.tiennhm.io.vn/)**
+>
+> Không cần cài đặt, không cần Windows, chạy được cả trên điện thoại và máy tính bảng.
+> No installation, no Windows required, works on phones and tablets too.
+
 ![GitHub contributors](https://img.shields.io/github/contributors/TienNHM/OGGY) 
 ![GitHub issues](https://img.shields.io/github/issues/TienNHM/OGGY?color=red) 
 ![GitHub top language](https://img.shields.io/github/languages/top/TienNHM/OGGY?color=cyan) 
@@ -16,6 +23,25 @@
 **OGGY** là một game chạy nhảy (runner game) được phát triển bằng C# Windows Forms, lấy cảm hứng từ bộ phim hoạt hình "Oggy và những chú gián". Người chơi điều khiển nhân vật Oggy chạy và nhảy để thu thập xu trong khi tránh các vật cản nguy hiểm.
 
 **OGGY** is a runner game developed with C# Windows Forms, inspired by the "Oggy and the Cockroaches" cartoon series. Players control Oggy to run and jump, collecting coins while avoiding dangerous obstacles.
+
+## 🌐 Chơi trên web / Play on the Web
+
+Ngoài bản Windows Forms trong repo này, OGGY còn có phiên bản **web mới: Oggy Adventure**, game phiêu lưu đi cảnh 2D vừa chơi vừa học cho các bé 5–10 tuổi. Mở là chơi, không cần tải hay cài đặt.
+
+Besides the Windows Forms version in this repo, OGGY now has a **new web version: Oggy Adventure**, a 2D side-scrolling adventure that mixes play and learning for kids aged 5–10. Open it and play, nothing to download or install.
+
+### 👉 [**https://oggy-adventure.tiennhm.io.vn/**](https://oggy-adventure.tiennhm.io.vn/)
+
+- 📖 4 hành trình, 38 màn, hơn 80 thẻ kiến thức / 4 journeys, 38 levels, 80+ knowledge cards
+- ❓ Câu đố mở cửa, trả lời sai không bị phạt / Door riddles with no penalty for wrong answers
+- 🧸 Chế độ **Bé chơi** dễ và chế độ **Thử thách** / Easy **Kids** mode and **Challenge** mode
+- 📱 Chơi được trên điện thoại, máy tính bảng và máy tính / Runs on phones, tablets and desktops
+- 💻 Mã nguồn / Source code: [TienNHM/oggy-adventure](https://github.com/TienNHM/oggy-adventure)
+
+| Bản / Version | Nền tảng / Platform | Cách chơi / How to play |
+|---|---|---|
+| 🌐 **Oggy Adventure (Web)** | Trình duyệt bất kỳ / Any browser | [Chơi ngay / Play now](https://oggy-adventure.tiennhm.io.vn/) |
+| 🖥️ **OGGY (Windows Forms)** | Windows 7+ | [Cài đặt / Installation](#-cài-đặt--installation) |
 
 ## ✨ Tính năng / Features
 
@@ -99,6 +125,9 @@ Ví dụ / Examples:
 - **Ổ cứng / Storage**: ~50 MB dung lượng trống / ~50 MB free space
 
 ## 🚀 Cài đặt / Installation
+
+> 💡 Chỉ muốn chơi nhanh? Hãy dùng [bản web](https://oggy-adventure.tiennhm.io.vn/), không cần cài đặt gì.
+> 💡 Just want to play? Use the [web version](https://oggy-adventure.tiennhm.io.vn/), no installation needed.
 
 ### Cách 1: Chạy từ source code / Method 1: Run from source code
 
@@ -250,5 +279,7 @@ This project may be distributed under its own license. Please check the LICENSE 
 - Cảm ơn tất cả những người đã đóng góp cho dự án / Thanks to all contributors
 
 ---
+
+🎮 **Chơi trên web / Play on the web: [oggy-adventure.tiennhm.io.vn](https://oggy-adventure.tiennhm.io.vn/)**
 
 ⭐ Nếu bạn thích dự án này, hãy cho một star! / If you like this project, please give it a star!
